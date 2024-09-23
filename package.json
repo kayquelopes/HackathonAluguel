@@ -11,8 +11,11 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@jamescoyle/vue-icon": "^0.1.2",
+    "@mdi/js": "^7.4.47",
     "vue": "^3.4.29",
-    "vue-router": "^4.3.3"
+    "vue-router": "^4.3.3",
+    "vue3-carousel": "^0.3.4"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.8.0",
