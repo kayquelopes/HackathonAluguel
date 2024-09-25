@@ -4,7 +4,10 @@
     <main></main>
    <footer>
     <div class="container-footer">
-       
+        <div class="item1"><P>©2024 Masion, Inc. · Privacidade · Termos · Informações da empresa</P></div>
+        <div class="item2"><a href="#">Portugues (BR)</a></div>
+        <div class="item4"><a href="#">R$ BRL</a></div>
+        <div class="item5"><a href="#">Atendimento e Recurso</a></div>
     </div>
    </footer>
 </template>
@@ -24,6 +27,23 @@ main{
     align-items: center;
     font-family: 'Kadwa', serif ;
 }
-
+p{
+    color: white;
+    font-size: 15px;
+}
+a{
+    color: white;
+    font-size: 15px;
+}
+.item1{
+    margin-left: 50px;
+}
+.item2{
+    display: flex;
+    flex-direction: row;
+}
+.item5{
+    margin-right: 50px;
+}
 </style>
   
