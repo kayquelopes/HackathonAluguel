@@ -1,5 +1,16 @@
 <script setup>
+import { ref } from 'vue'
 
+const items =  ref([
+  { id: 1, imovel: 'Casa na praia, RJ', dataI: '2024-08-17', dataF: '2024-08-22', custo: '2500,00' },
+  { id: 2, imovel: 'Casa na praia, RJ', dataI: '2024-09-17', dataF: '2024-09-22', custo: '2500,00' },
+  { id: 3, imovel: 'Casa na praia, RJ', dataI: '2024-10-17', dataF: '2024-10-22', custo: '2500,00' }
+])
+const items2 =  ref([
+  {id: 1, imovel: 'Casa no lago, MT', data: 'max: 7', custoN: '500,00', custoT: '3500,00', alugada: 'Sim'},
+  {id: 2, imovel: 'Casa no lago, GO', data: 'max: 7', custoN: '500,00', custoT: '3500,00', alugada: 'Sim'},
+  {id: 3, imovel: 'Casa no lago, MG', data: 'max: 7', custoN: '500,00', custoT: '3500,00', alugada: 'Sim'}
+])
 </script>
 <template>
   <main>
