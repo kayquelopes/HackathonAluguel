@@ -249,6 +249,8 @@
     </div>
   </main>
 </template>
+
+<style scoped>
 .titulo {
   display: flex;
   flex-direction: row;
@@ -291,5 +293,4 @@ h1 {
   color: black;
 }
 
-<style scoped>
 </style>
