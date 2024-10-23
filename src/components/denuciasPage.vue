@@ -55,4 +55,73 @@ let Smot = ref([])
 </template>
 
 <style scoped>
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #7c94a1;
+  margin: 0;
+  padding: 0;
+}
+.relatorio {
+  width: 1200px;
+}
+.denunciar {
+  width: 1200px;
+}
+h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+div {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.container-motivos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.motivos {
+  width: 290px;
+  margin-left: 20px ;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+label {
+  margin-right: 20px;
+}
+
+textarea {
+  height: 100px;
+}
+
+p {
+  color: #555;
+  font-size: 0.9em;
+}
+
 </style>
