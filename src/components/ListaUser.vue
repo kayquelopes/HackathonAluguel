@@ -10,7 +10,7 @@
       <div class="profile-card">
         <div class="user-img">
           <img
-            src="../../public/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+            src="../../public/imagens/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
             alt=""
           />
         </div>
