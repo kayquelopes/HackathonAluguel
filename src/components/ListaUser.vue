@@ -1,6 +1,4 @@
-<script setup>
-
-</script>
+<script setup></script>
 <template>
   <main>
     <div class="titulo">
@@ -24,7 +22,7 @@
       <div class="profile-card">
         <div class="user-img">
           <img
-            src="../../public/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+            src="../../public/imagens/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
             alt=""
           />
         </div>
@@ -38,7 +36,7 @@
       <div class="profile-card">
         <div class="user-img">
           <img
-            src="../../public/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+            src="../../public/imagens/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
             alt=""
           />
         </div>
@@ -52,7 +50,7 @@
       <div class="profile-card">
         <div class="user-img">
           <img
-            src="../../public/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+            src="../../public/imagens/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
             alt=""
           />
         </div>
@@ -66,7 +64,7 @@
       <div class="profile-card">
         <div class="user-img">
           <img
-            src="../../public/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+            src="../../public/imagens/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
             alt=""
           />
         </div>
@@ -80,7 +78,7 @@
       <div class="profile-card">
         <div class="user-img">
           <img
-            src="../../public/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+            src="../../public/imagens/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
             alt=""
           />
         </div>
@@ -93,7 +91,7 @@
       <div class="profile-card">
         <div class="user-img">
           <img
-            src="../../public/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+            src="../../public/imagens/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
             alt=""
           />
         </div>
@@ -106,7 +104,7 @@
       <div class="profile-card">
         <div class="user-img">
           <img
-            src="../../public/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+            src="../../public/imagens/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
             alt=""
           />
         </div>
@@ -119,7 +117,7 @@
       <div class="profile-card">
         <div class="user-img">
           <img
-            src="../../public/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+            src="../../public/imagens/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
             alt=""
           />
         </div>
@@ -132,7 +130,7 @@
       <div class="profile-card">
         <div class="user-img">
           <img
-            src="../../public/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+            src="../../public/imagens/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
             alt=""
           />
         </div>
@@ -145,7 +143,7 @@
       <div class="profile-card">
         <div class="user-img">
           <img
-            src="../../public/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+            src="../../public/imagens/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
             alt=""
           />
         </div>
@@ -158,7 +156,7 @@
       <div class="profile-card">
         <div class="user-img">
           <img
-            src="../../public/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+            src="../../public/imagens/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
             alt=""
           />
         </div>
@@ -171,7 +169,7 @@
       <div class="profile-card">
         <div class="user-img">
           <img
-            src="../../public/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+            src="../../public/imagens/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
             alt=""
           />
         </div>
@@ -184,7 +182,7 @@
       <div class="profile-card">
         <div class="user-img">
           <img
-            src="../../public/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+            src="../../public/imagens/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
             alt=""
           />
         </div>
@@ -197,7 +195,7 @@
       <div class="profile-card">
         <div class="user-img">
           <img
-            src="../../public/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+            src="../../public/imagens/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
             alt=""
           />
         </div>
@@ -210,7 +208,7 @@
       <div class="profile-card">
         <div class="user-img">
           <img
-            src="../../public/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+            src="../../public/imagens/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
             alt=""
           />
         </div>
@@ -223,7 +221,7 @@
       <div class="profile-card">
         <div class="user-img">
           <img
-            src="../../public/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+            src="../../public/imagens/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
             alt=""
           />
         </div>
@@ -236,7 +234,7 @@
       <div class="profile-card">
         <div class="user-img">
           <img
-            src="../../public/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+            src="../../public/imagens/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
             alt=""
           />
         </div>
@@ -245,7 +243,7 @@
           <p>Email: usuario@example.com</p>
           <p>Telefone: (11) 99999-9999</p>
         </div>
-      </div>    
+      </div>
     </div>
   </main>
 </template>
@@ -292,5 +290,4 @@ h1 {
 .user-info p {
   color: black;
 }
-
 </style>
