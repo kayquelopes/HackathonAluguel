@@ -1,41 +1,21 @@
 <script setup>
-import { reactive } from 'vue'
-import router from '@/router'
-
-const infoUser = reactive({
-  email: '',
-  senha: '',
-})
-const emailUser = 'user@gmail.com'
-const senhaUser = '12345'
-
-function enviar(infoUser) {
-  if (infoUser.email == emailUser && infoUser.senha == senhaUser) {
-    router.push('/PagInic')
-    
-  } else {
-    alert('Erro, tem alguma informação incorreta')
-  }
-}
 </script>
 <template>
   <div class="login-page">
     <div class="login-container">
       <div class="titulo">
-        <h1 style="color: #164773">Login</h1>
+        <h1 style="color: #164773">Recuperação do Email</h1>
       </div>
-      <form @submit.prevent="enviar(infoUser)">
+      <div>
+        <p>Digite seu Telefone que enviaremos um sms com o link para Recuperação do email</p>
+      </div>
+      <form>
         <div>
-          <input type="email" placeholder="Email" class="login-inp" v-model="infoUser.email" />
-          <RouterLink to="/EscEmail">Não tenho conta</RouterLink>
-          <input type="password" placeholder="Senha" class="login-inp" v-model="infoUser.senha" />
-          <a href="#">esqueci minha senha</a>
+          <input type="tel" placeholder="Telefone" class="login-inp" />
         </div>
         <div class="cont-bnt">
-          <button class="login-btn" type="submit">Login</button>
+          <button class="login-btn" type="submit">Recuperar</button>
         </div>
-        <hr style="margin-bottom: 10px" />
-        <RouterLink to="/Register">Não tenho conta</RouterLink>
       </form>
     </div>
   </div>
@@ -49,7 +29,7 @@ h1 {
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
-  font-size: 38px;
+  font-size: 30px;
 }
 
 a {

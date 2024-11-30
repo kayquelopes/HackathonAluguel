@@ -10,14 +10,14 @@ const router = createRouter({
       component: LoginView,
     },
     {
-      path: '/RegisterView',
+      path: '/Register',
       name: 'RegisterView',
       component: () => import('../views/RegisterView.vue'),
     },
     {
-      path: '/MainView',
-      name: 'MainView',
-      component: () => import('../views/MainView.vue'),
+      path: '/PagInic',
+      name: 'PagInicView',
+      component: () => import('../views/PagInicView.vue'),
     },
     {
       path: '/user',
@@ -25,9 +25,34 @@ const router = createRouter({
       component: () => import('../views/UserView.vue'),
     },
     {
-      path: '/ListaUserView',
+      path: '/adm',
+      name: 'AdmView',
+      component: () => import('../views/AdmView.vue'),
+    },
+    {
+      path: '/listaUser',
       name: 'ListaUserView',
       component: () => import('../views/ListaUserView.vue'),
+    },
+    {
+      path: '/registrarcasa',
+      name: 'RegistrarCasaView',
+      component: () => import('../views/RegistrarCasaView.vue'),
+    },
+    {
+      path: '/pagedenuncias',
+      name: 'PageDenunciasView',
+      component: () => import('../views/PageDenunciasView.vue'),
+    },
+    {
+      path: '/RegistrarPagamento',
+      name: 'RegistrarPagamentoView',
+      component: () => import('../views/RegistrarPagamentoView.vue'),
+    },
+    {
+      path: '/EscEmail',
+      name: 'EscEmailView',
+      component: () => import('../views/EscEmailView.vue'),
     },
   ],
 })

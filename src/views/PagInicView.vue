@@ -1,6 +1,7 @@
 <script setup>
 import HeaderComp from '@/components/HeaderComp.vue'
-import MainComp from '@/components/MainComp.vue'
+import PagInicU from '@/components/PagInic.vue';
+import FooterComp from '@/components/FooterComp.vue';
 </script>
 
 <template>
@@ -8,6 +9,9 @@ import MainComp from '@/components/MainComp.vue'
     <HeaderComp />
   </header>
   <main>
-    <MainComp />
+    <PagInicU />
   </main>
+  <footer>
+    <FooterComp />
+  </footer>
 </template>
