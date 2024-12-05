@@ -12,7 +12,6 @@ import {
   mdiCandelabra,
   mdiCastle,
   mdiPuzzle,
-  mdiInformation
 } from '@mdi/js'
 
 const path = ref(mdiCreation)
