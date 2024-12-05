@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from 'vue-router';
 const casaAlugadas = 10
 const casaAlugou = 15
 const denuncias = 0
@@ -56,7 +57,7 @@ function okk(){
       </div>
       <div class="container-item8">
         <div class="cont-bnt">
-          <button class="deletar-btn">Desativar</button>
+          <button class="deletar-btn"><RouterLink to="/">Desativar</RouterLink></button>
         </div>
       </div>
     </div>
