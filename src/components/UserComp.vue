@@ -4,6 +4,10 @@ const casaAlugou = 15
 const denuncias = 0
 const pais = "Brasil"
 const estado = "Rio De Janeiro"
+
+function okk(){
+  alert("Sua conta vai se delatada em 30 dias")
+}
 </script>
 <template>
   <main>
@@ -47,12 +51,12 @@ const estado = "Rio De Janeiro"
       </div>
       <div class="container-item7">
         <div class="cont-bnt">
-          <button class="deletar-btn" type="submit">Deletar</button>
+          <button class="deletar-btn" @click="okk">Deletar</button>
         </div>
       </div>
       <div class="container-item8">
         <div class="cont-bnt">
-          <button class="deletar-btn" type="submit">Desativar</button>
+          <button class="deletar-btn">Desativar</button>
         </div>
       </div>
     </div>

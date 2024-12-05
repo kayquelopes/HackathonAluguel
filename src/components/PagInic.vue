@@ -62,7 +62,7 @@ const path10 = ref(mdiPuzzle)
         </div>
         <div class="card2">
           <div class="imagem">
-            <img src="../../public/imagens/casa-de-praia (1).jpg" alt="" />
+            <img src="../../public/imagens/5e6aca5c660ad9e4efda587316d4dc2a.jpg" alt="" />
           </div>
 
           <div class="texto">
@@ -86,7 +86,7 @@ const path10 = ref(mdiPuzzle)
         </div>
         <div class="card2">
           <div class="imagem">
-            <img src="../../public/imagens/casa-de-praia (1).jpg" alt="" />
+            <img src="../../public/imagens/o-brasil-tem-replica-da-casa-do-hobbit-do-universo-senhor-dos-aneis_1_223546.webp" alt="" />
           </div>
 
           <div class="texto">
@@ -98,7 +98,7 @@ const path10 = ref(mdiPuzzle)
         </div>
         <div class="card2">
           <div class="imagem">
-            <img src="../../public/imagens/casa-de-praia (1).jpg" alt="" />
+            <img src="../../public/imagens/bd4040e02959e3c96527059ae7281edd.jpg" alt="" />
           </div>
 
           <div class="texto">

@@ -115,6 +115,10 @@ input[type='search'] {
 .dropdown {
   position: relative;
   display: inline-block;
+  border: 1px black solid;
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 20px ;
 }
 
 .dropdown-content {

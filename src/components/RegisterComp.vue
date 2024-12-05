@@ -1,3 +1,5 @@
+<script setup>
+</script>
 <template>
     <div class="login-page">
       <div class="login-container">
@@ -18,7 +20,7 @@
               <option>BRASIL</option>
               <option>BRASIL</option>
             </select>
-            
+
             <select class="cad2-inp">
               <option disabled value="">Escolha um item</option>
               <option>RIO DE JANEIRO</option>
@@ -32,7 +34,7 @@
             <input type="password" placeholder="Senha" class="cad-inp" />
           </div>
           <div class="cont-bnt">
-            <button class="login-btn">Login</button>
+            <button class="login-btn" ><RouterLink to="/user" style="color: white;">cadastrar</RouterLink></button>
           </div>
           <hr style="margin-bottom: 10px" />
           <RouterLink to="/">Tenho Conta</RouterLink>
@@ -40,10 +42,10 @@
       </div>
     </div>
   </template>
-  
+
   <style scoped>
   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kadwa:wght@700&display=swap');
-  
+
   h1 {
     font-family: 'Kadwa', serif;
     font-optical-sizing: auto;
@@ -51,11 +53,11 @@
     font-style: normal;
     font-size: 38px;
   }
-  
+
   a {
     color: black;
   }
-  
+
   button {
     font-weight: bold;
     border: none;
@@ -64,7 +66,7 @@
     color: #d9d9d9;
     width: 350px;
   }
-  
+
   .login-page {
     background-color: #7c94a1;
     margin: 0;
@@ -75,7 +77,7 @@
     height: 1000px;
     width: 100vw;
   }
-  
+
   .login-container {
     margin-top: 25px;
     background-color: #fffffff5;
@@ -104,7 +106,7 @@
     padding: 9px;
     opacity: 0.5;
   }
-  
+
   .cad-inp::placeholder {
     color: #164773;
     opacity: 0.7;
@@ -150,7 +152,7 @@
     border: none;
     border-radius: 10px;
   }
-  
+
   .login-btn:hover {
     background-color: #0a2a43;
   }

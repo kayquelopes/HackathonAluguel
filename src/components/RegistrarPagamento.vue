@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+function okkk(){
+  alert('Seu cartão foi cadastrado')
+}
+</script>
 <template>
   <main class="container">
     <div class="cadastro">
@@ -21,7 +25,7 @@
         <img src="../../public/imagens/design-realista-de-cartao-de-credito_23-2149124864.avif" alt="" class="imagem">
       </div>
       <div class="cont-bnt" style="border: none">
-        <button class="enviar-btn" type="submit">cadastrar</button>
+        <button class="enviar-btn" @click="okkk">cadastrar</button>
       </div>
     </div>
   </main>

@@ -2,6 +2,10 @@
 import { RouterLink } from 'vue-router'
 const datainic = '22/12/2024'
 const datafinal = '27/12/2024'
+
+function ok(){
+  alert('Sua Casa escolhida foi reservada')
+}
 </script>
 <template>
   <main>
@@ -47,7 +51,7 @@ const datafinal = '27/12/2024'
       <div class="i1"><input type="checkbox">Cartão debito: kayque **45</div>
       <div class="i2"><RouterLink to="/RegistrarPagamento" class="ttl">cadastrar cartão</RouterLink></div>
     </div>
-    <div class="item5" style="border: none"><button class="btn-hosp">Hospedar</button></div>
+    <div class="item5" style="border: none"><button @click="ok" class="btn-hosp">Hospedar</button></div>
   </main>
 </template>
 <style scoped>
