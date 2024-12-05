@@ -50,6 +50,9 @@ let Smot = ref([])
         </div>
       </div>
       <span>{{ Smot }}</span>
+      <div class="cont-bnt">
+          <button class="login-btn" type="submit">denunciar</button>
+        </div>
     </div>
   </main>
 </template>
@@ -123,5 +126,22 @@ p {
   color: #555;
   font-size: 0.9em;
 }
+.login-btn:hover {
+  background-color: #0a2a43;
+}
+.cont-bnt {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+}
 
+button {
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 25px 50px;
+  color: #d9d9d9;
+  width: 350px;
+}
 </style>

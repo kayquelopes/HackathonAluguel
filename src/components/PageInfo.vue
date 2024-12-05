@@ -118,7 +118,7 @@
         <div class="item7-10"><p class="txt-lof">lorem</p></div>
       </div>
       <div class="item8" style="border: none">
-        <button class="btn-hosp">Hospedar</button>
+        <button class="btn-hosp"><RouterLink to="/pagefinal">reserva</RouterLink></button>
       </div>
     </div>
   </main>

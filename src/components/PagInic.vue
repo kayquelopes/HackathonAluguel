@@ -25,7 +25,6 @@ const path7 = ref(mdiCampfire)
 const path8 = ref(mdiCandelabra)
 const path9 = ref(mdiCastle)
 const path10 = ref(mdiPuzzle)
-const path11 = ref(mdiInformation)
 </script>
 <template>
   <main>
@@ -58,7 +57,9 @@ const path11 = ref(mdiInformation)
             <p>Max: 5 noites</p>
           </div>
 
-          <button class="info"><svg-icon type="mdi" :path="path11" class="icon"></svg-icon></button>
+          <button class="info">
+            <RouterLink to="/Pageinfo">.</RouterLink>
+          </button>
         </div>
         <div class="card2">
           <div class="imagem">
