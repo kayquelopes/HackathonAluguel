@@ -12,7 +12,7 @@ const senhaUser = '12345'
 function enviar(infoUser) {
   if (infoUser.email == emailUser && infoUser.senha == senhaUser) {
     router.push('/PagInic')
-    
+
   } else {
     alert('Erro, tem alguma informação incorreta')
   }

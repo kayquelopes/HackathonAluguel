@@ -54,6 +54,16 @@ const router = createRouter({
       name: 'EscEmailView',
       component: () => import('../views/EscEmailView.vue'),
     },
+    {
+      path: '/PageInfo',
+      name: 'PageInfoView',
+      component: () => import('../views/PageInfoView.vue'),
+    },
+    {
+      path: '/PageFinal',
+      name: 'PageFinalView',
+      component: () => import('../views/PageFinalView.vue'),
+    },
   ],
 })
 

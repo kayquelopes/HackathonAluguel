@@ -1,55 +1,9 @@
 <script setup>
-import { ref } from 'vue'
-
-const items = ref([
-  {
-    id: 1,
-    imovel: 'Casa na praia, RJ',
-    dataI: '2024-08-17',
-    dataF: '2024-08-22',
-    custo: '2500,00',
-  },
-  {
-    id: 2,
-    imovel: 'Casa na praia, RJ',
-    dataI: '2024-09-17',
-    dataF: '2024-09-22',
-    custo: '2500,00',
-  },
-  {
-    id: 3,
-    imovel: 'Casa na praia, RJ',
-    dataI: '2024-10-17',
-    dataF: '2024-10-22',
-    custo: '2500,00',
-  },
-])
-const items2 = ref([
-  {
-    id: 1,
-    imovel: 'Casa no lago, MT',
-    data: 'max: 7',
-    custoN: '500,00',
-    custoT: '3500,00',
-    alugada: 'Sim',
-  },
-  {
-    id: 2,
-    imovel: 'Casa no lago, GO',
-    data: 'max: 7',
-    custoN: '500,00',
-    custoT: '3500,00',
-    alugada: 'Sim',
-  },
-  {
-    id: 3,
-    imovel: 'Casa no lago, MG',
-    data: 'max: 7',
-    custoN: '500,00',
-    custoT: '3500,00',
-    alugada: 'Sim',
-  },
-])
+const casaAlugadas = 10
+const casaAlugou = 15
+const denuncias = 0
+const pais = "Brasil"
+const estado = "Rio De Janeiro"
 </script>
 <template>
   <main>
@@ -60,71 +14,45 @@ const items2 = ref([
         </div>
       </div>
       <div class="container-item2">
-        <div class="item2-1"><p>Nome: Daniela fas kon selos Cula</p></div>
-        <div class="item2-2"><p>Denuncias: 20</p></div>
-        <div class="item2-3">
+        <div class="item2-1">
+          <p>Nome: Daniela fas kon selos Cula</p>
+        </div>
+        <div class="item2-2">
           <p>Telefone: +55 (47) 0800 192 6969</p>
-          <p>País: Brasil | Estado: Rio De Janeiro</p>
-          <p>Email: Danielafaskon@gmail.com</p>
-          <p>senha: 123456789</p>
+        </div>
+        <div class="item2-3">
+          <p>Email: daniela.faskon@gmail.com</p>
+        </div>
+        <div class="item2-4">
+          <p>Endereço: Rua do Tatuapé, 123</p>
+        </div>
+        <div class="item2-5">
+          <p>Data de Nascimento: 15/07/1990</p>
+        </div>
+        <div class="item2-6">
+          <p>País: {{ pais }} | Estado: {{ estado }}</p>
         </div>
       </div>
       <div class="container-item3">
-        <div class="item3-1">
-          <div class="titulo"><h2>Casas Alugadas</h2></div>
-          <table>
-            <colgroup span="4"></colgroup>
-            <tr>
-              <th class="imovel1">Nome do imovel</th>
-              <th class="dataI">Data inicial</th>
-              <th class="dataF">Data Final</th>
-              <th class="custo">Custo</th>
-            </tr>
-            <tr v-for="item in items" :key="item.id">
-              <td>
-                {{ item.imovel }}
-              </td>
-              <td>
-                {{ item.dataI }}
-              </td>
-              <td>
-                {{ item.dataF }}
-              </td>
-              <td>
-                {{ item.custo }}
-              </td>
-            </tr>
-          </table>
+        <p>Denuncias: {{ denuncias }}</p>
+      </div>
+      <div class="container-item4">
+        <p>SUAS CASA QUE FORAM ALUGADAS: {{ casaAlugadas }}</p>
+      </div>
+      <div class="container-item5">
+        <p>Status da sua conta: <a href="#" style="color: green; text-decoration: none;">Autorizada</a></p>
+      </div>
+      <div class="container-item6">
+        <p>CASA QUE VOCÊ ALUGOU: {{ casaAlugou }}</p>
+      </div>
+      <div class="container-item7">
+        <div class="cont-bnt">
+          <button class="deletar-btn" type="submit">Deletar</button>
         </div>
-        <div class="item3-2">
-          <div class="titulo"><h2>Suas Casas</h2></div>
-          <table>
-            <colgroup span="4"></colgroup>
-            <tr>
-              <th class="imovel2">Nome do imovel</th>
-              <th class="data">Dias Maximos</th>
-              <th class="custoN">Custo por noite</th>
-              <th class="custoT">Custo Total</th>
-              <th class="alugada">Alugada</th>
-            </tr>
-            <tr v-for="item in items2" :key="item.id">
-              <td>
-                {{ item.imovel }}
-              </td>
-              <td>
-                {{ item.data }}
-              </td>
-              <td>
-                {{ item.custoN }}
-              </td>
-              <td>
-                {{ item.custoT }}
-              </td>
-              <td>
-                {{ item.alugada }}
-              </td>
-            </tr>
-          </table>
+      </div>
+      <div class="container-item8">
+        <div class="cont-bnt">
+          <button class="deletar-btn" type="submit">Desativar</button>
         </div>
       </div>
     </div>
@@ -138,6 +66,7 @@ main {
   width: 100%;
   height: 100%;
 }
+
 .container-user {
   display: flex;
   flex-direction: row;
@@ -145,6 +74,7 @@ main {
   justify-content: center;
   align-items: center;
 }
+
 .container-item1 {
   border: 1px solid black;
   border-radius: 20px;
@@ -152,90 +82,171 @@ main {
   height: 300px;
   margin-right: 20px;
   margin-top: 100px;
-  box-shadow: 10px 10px;
+  box-shadow: 5px 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 img {
   width: 150px;
   height: 200px;
 }
+
 .container-item2 {
-  border: 1px solid black;
-  border-radius: 20px;
   width: 60%;
   height: 300px;
-  margin-left: 20px;
-  margin-top: 100px;
-  box-shadow: 10px 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  flex-wrap: wrap;
-}
-.item2-1 {
-  border: 1px solid black;
-  border-radius: 20px 0 0 0;
-  width: 49.8%;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.item2-2 {
-  border: 1px solid black;
-  border-radius: 0 20px 0 0;
-  width: 49.8%;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.item2-3 {
-  border: 1px solid black;
-  border-radius: 0 0 0 20px;
-  width: 99.8%;
-  height: 200px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.container-item3 {
+  background-color: rgb(255, 255, 255);
   border: 1px solid black;
   border-radius: 20px;
-  width: 82.5%;
-  height: 600px;
+  margin: 100px 0px 0px 20px;
+  box-shadow: 5px 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.item2-1 {
+  border: 1px solid black;
+  border-radius: 20px 20px 0 0;
+  width: 1000px;
+  height: 100px;
+}
+.item2-2 {
+  width: 452.9px;
+  height: 55px;
+}
+
+.item2-3 {
+  width: 452.9px;
+  height: 55px;
+}
+
+.item2-4 {
+  width: 452.9px;
+  height: 55px;
+}
+.item2-5 {
+  width: 452.9px;
+  height: 55px;
+}
+.item2-6 {
+  border: 1px solid black;
+  border-radius: 0 0 20px 20px;
+  width: 1000px;
+  height: 89px;
+}
+
+.item2-1 > p,
+.item2-6 > p {
+  font-family: 'Kadwa', serif;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.item2-2 > p,
+.item2-3 > p,
+.item2-4 > p,
+.item2-5 > p {
+  font-family: 'Kadwa', serif;
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+.container-item3,
+ .container-item4 {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 580px;
+  height: 150px;
   margin-top: 50px;
-  margin-bottom: 100px;
-  box-shadow: 10px 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  box-shadow: 5px 5px;
   display: flex;
   flex-direction: row;
   align-items: start;
   justify-content: center;
   flex-wrap: wrap;
 }
-.titulo {
-  color: rgb(0, 0, 0);
-  max-width: 810px;
-  min-height: 50px;
-  margin-top: 1cm;
-  margin-left: 5cm;
-}
-h2 {
-  text-align: center;
-  font-size: 25px;
-}
-p {
-  font-family: 'Kadwa', serif;
-  font-size: 20px;
-}
-.item2-3 > p {
-  font-family: 'Kadwa', serif;
-  font-size: 20px;
+
+.container-item5,
+ .container-item6 {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 580px;
+  height: 150px;
+  margin-top: 0px;
+  margin-right: 50px;
   margin-left: 50px;
+  margin-bottom: 50px;
+  box-shadow: 5px 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+ }
+ .container-item3 > p,
+ .container-item5 > p{
+  font-family: 'Kadwa', serif;
+  font-size: 30px;
+  margin-top: 50px;
+ }
+
+ .container-item4 > p,
+ .container-item6 > p{
+  font-family: 'Kadwa', serif;
+  font-size: 25px;
+  margin-top: 50px;
+ }
+ .container-item7,
+ .container-item8 {
+  border-radius: 20px;
+  width: 580px;
+  height: 150px;
+  margin-top: 0px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+ }
+ .deletar-btn {
+  font-family: 'Kadwa', serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 17px;
+  margin-top: 20px;
+  background-color: #102f4a;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+.deletar-btn:hover {
+  background-color: #0a2a43;
+}
+.cont-bnt {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+button {
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 25px 50px;
+  color: #d9d9d9;
+  width: 350px;
 }
 </style>

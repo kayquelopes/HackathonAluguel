@@ -16,7 +16,9 @@ const path3 = ref(mdiMenu);
 
       <div class="item3">
         <button class="bnt-user"><svg-icon type="mdi" :path="path2" class="icon2"></svg-icon></button>
-        <button class="bnt-menu"> <svg-icon type="mdi" :path="path3" class="icon3"></svg-icon></button>
+        <button class="bnt-menu"> <svg-icon type="mdi" :path="path3" class="icon3"></svg-icon>
+          
+        </button>
       </div>
     </div>
     <RouterView />
@@ -35,7 +37,7 @@ const path3 = ref(mdiMenu);
   height: 150px;
   width: 250px;
   margin-left: 50px;
-  
+
 }
 .img1{
   height: 88px;
@@ -75,7 +77,7 @@ input[type='search']{
   justify-content: center;
   align-items: center;
   height: 150px;
-  width: 250px; 
+  width: 250px;
   margin-right: 50px;
   margin-left: 50px;
 }
